@@ -28,10 +28,15 @@
 }
 
 /* ===================================================================================== */
-
-.navbar{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 27%, rgba(255, 255, 255, 0.5)), linear-gradient(to top, #ffffff 78%, rgba(0, 0, 0, 0) -2%);
+.main{
+    background: url(../images/bg-main.png);
+    height: 900px;
+    /* background-attachment: fixed; */
+    background-size: cover;
 }
+/* .navbar{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 27%, rgba(255, 255, 255, 0.5)), linear-gradient(to top, #ffffff 78%, rgba(0, 0, 0, 0) -2%);
+} */
 
 .navbar-brand img{
     width: 80px;
@@ -129,7 +134,17 @@
     font-size: 22px;
     opacity: 0.7;
 }
-
+.top-right {
+    position: absolute;
+    text-align: center;
+    background-color: #c50a0a;
+    border-radius: 50%;
+    top: 12px;
+    color: white;
+    padding: 1rem;
+    font-size: 13px;
+    right: 3px;
+}
 .commit,.brand{
     font-family: "BankGothicMedium";
 }
@@ -242,7 +257,7 @@
 }
 @media screen and (min-width: 800px){
     .navbar-expand-lg{
-        padding: 1rem 3rem;
+        padding: 1rem 0.5rem;
     }
     .had{
         text-align: left !important;
