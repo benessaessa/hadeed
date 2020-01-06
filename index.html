@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="icon" type="image/ico" href="images/footer.png">
+    <link rel="stylesheet" href="package/css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HADID</title>
 </head>
@@ -50,6 +51,47 @@
                     </ul>
                 </div>
             </nav>
+            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="carousel-inner slider1">
+                                <div class="carousel-item active" data-interval="10000">
+                                  <img src="images/slider1.png" class="d-block mx-auto w-100 p-5" height="543px">
+                                  <div class="carousel-caption">
+                                    <h1>UNLEASH</h1>
+                                    <h2>YOUR INNER BEAST</h2>
+                                    <p><button class="btn btnShopHeader py-3">SHOP NOW</button></p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item" data-interval="10000" >
+                                    <img src="images/haded2.png" class="d-block mx-auto w-100  p-5" height="543px">
+                                    <div class="carousel-caption">
+                                        <h1>UNLEASH</h1>
+                                        <h2>YOUR INNER BEAST</h2>
+                                        <p><button class="btn btnShopHeader py-3">SHOP NOW</button></p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-interval="10000" >
+                                    <img src="images/haded3.png" class="d-block mx-auto w-100  p-5" height="543px">
+                                    <div class="carousel-caption">
+                                        <h1>UNLEASH</h1>
+                                        <h2>YOUR INNER BEAST</h2>
+                                        <p><button class="btn btnShopHeader py-3">SHOP NOW</button></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                  <img src="images/previous.svg" class="direction">
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <img src="images/next.svg" class="direction">
+                </a>
+              </div>
         </div>
     </div>
     <!-- =========================================================== -->
@@ -567,6 +609,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="package/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          freeMode: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+        });
+    </script>
 </body>
 
 </html>

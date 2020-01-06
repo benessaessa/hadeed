@@ -39,8 +39,12 @@
 } */
 
 .navbar-brand img{
-    width: 80px;
-    height: 82px;
+    width:60px;
+    height: 60px;
+    opacity: 0.7;
+}
+.navbar-brand img:hover{
+    opacity: 1;
 }
 .navbar .navbar-nav .nav-item .nav-link{
     color: #ffffff;
@@ -48,12 +52,65 @@
     font-size: 11px;
     letter-spacing: 4.33px;
     opacity: 0.7;
+    padding-left: 2.5rem;
     font-weight: bold;
     color: #ffffff; 
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover{
     opacity: 1;
+}
+
+.navbar-nav .nav-item .nav-link img{
+    height: 46px;
+    width: 46px;
+}
+.navbar-light .navbar-toggler{
+    border-color: white;
+}
+.navbar-light .navbar-toggler-icon{
+    background-color: white;
+}
+.slider1 .carousel-item{
+    background: url(../images/hero-bg.png);
+    background-size: cover;
+    padding:4rem 4rem 1rem 4rem;
+    height: 595px;
+    width: 506px;
+}
+.carousel-caption{
+    position: absolute;
+    /* width: 00px; */
+    top: 240px;
+    left: -5px;
+}
+.carousel-caption h1{
+    letter-spacing: 1.8rem;
+    font-family: "BankGothicMedium";
+    font-size: 64px;
+    margin-right: -80px;
+}
+.carousel-caption h2{
+    letter-spacing: 0.3rem;
+    font-family: "BankGothicMedium";
+    font-size: 34px;
+    margin-right: -80px;
+    opacity: 0.7;
+}
+.btnShopHeader{
+    background-color: #ffffff;
+    border: solid 1.2px #ffffff;
+    width: 300px;
+    font-family: "futura-bold";
+    font-size: 14px;
+    letter-spacing: 8px;
+    margin-top: 3rem;
+    margin-left: 5rem;
+}
+.btnShopHeader:hover{
+    background-color: #c50a0a;
+    color: #ffffff;
+    border: solid 1.2px #c50a0a;
 }
 /* ======================================================================== */
 .cards img:hover{
@@ -257,7 +314,7 @@
 }
 @media screen and (min-width: 800px){
     .navbar-expand-lg{
-        padding: 1rem 0.5rem;
+        padding: 1.5rem 0.5rem;
     }
     .had{
         text-align: left !important;
@@ -271,6 +328,34 @@
     }
 }
 @media screen and (max-width:900px){
+    
+    .slider1 .carousel-item{
+        background: url(../images/hero-bg.png);
+        background-size: cover;
+        padding:4rem 4rem 1rem 4rem;
+        margin-left: -90px;
+        height: 490px;
+    }
+    .btnShopHeader{
+        width: 230px;
+        margin-left: 5rem;
+    }
+    .slider1 .carousel-item img{
+        padding-right: 15rem;
+        height: 450px;
+        /* width: 310px !important; */
+        max-width: 90% !important;
+        /* margin-right:68px !important; */
+    }
+    .carousel-caption h1{
+        font-size: 21px;
+        margin-right: -28px;
+        letter-spacing: 1.2rem;
+    }
+    .carousel-caption h2{
+        font-size: 14px;
+        margin-right: -12px;
+    }
     .couchEdit{
         position: relative;
         padding-top: 9rem;
@@ -340,5 +425,27 @@
         right: 0;
         left: 10px;
         height: 400px;
+    }
+}
+@media screen and (max-width:1500px){
+    .imgEdit{
+        right: 70px !important;
+    }
+}
+@media screen and (max-width:320px){
+    .slider1 .carousel-item img{
+        padding-right: 15rem;
+        height: 450px;
+        width: 310px !important;
+        /* max-width: 90% !important; */
+        margin-right:68px !important;
+    }
+    .btnShopHeader{
+        margin-left: 0.1rem;
+    }
+}
+@media screen and (max-width:760px){
+    .direction{
+        display: none;
     }
 }
