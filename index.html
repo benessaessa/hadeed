@@ -16,89 +16,204 @@
 <body>
 
     <!--------------------- // Header // ---------------------------->
-    <div class="main">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light  header">
-                <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-align-justify text-white"></i>
-                </button>
+    <div class="container">
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light header fixed-top">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-align-justify text-white"></i>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"> MEN’S COLLECTION <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">WOMEN’S COLLECTION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ATHLETES</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link pr-3">
-                                <img src="images/language.svg">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="images/shoping.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="col-lg-6 col-md-6">
-                            <div class="carousel-inner slider1">
-                                <div class="carousel-item active" data-interval="10000">
-                                  <img src="images/slider1.png" class="d-block mx-auto w-100 p-5" height="543px">
-                                  <div class="carousel-caption">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"> MEN’S COLLECTION <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WOMEN’S COLLECTION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ATHLETES</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link pr-3">
+                            <img src="images/language.svg">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="images/shoping.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    </div>
+    <div class="container-fluid p-0">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/bg-main.png" alt="Los Angeles" width="100%" height="950px">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-6">
+                                    <img src="images/slider2.png" height="543px"
+                                        class="w-100 imgInnerSlider">
                                     <h1>UNLEASH</h1>
                                     <h2>YOUR INNER BEAST</h2>
-                                    <p><button class="btn btnShopHeader py-3">SHOP NOW</button></p>
-                                  </div>
-                                </div>
-                                <div class="carousel-item" data-interval="10000" >
-                                    <img src="images/haded2.png" class="d-block mx-auto w-100  p-5" height="543px">
-                                    <div class="carousel-caption">
-                                        <h1>UNLEASH</h1>
-                                        <h2>YOUR INNER BEAST</h2>
-                                        <p><button class="btn btnShopHeader py-3">SHOP NOW</button></p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-interval="10000" >
-                                    <img src="images/haded3.png" class="d-block mx-auto w-100  p-5" height="543px">
-                                    <div class="carousel-caption">
-                                        <h1>UNLEASH</h1>
-                                        <h2>YOUR INNER BEAST</h2>
-                                        <p><button class="btn btnShopHeader py-3">SHOP NOW</button></p>
-                                    </div>
+                                    <p>
+                                        <button class="btn btnShopHeader py-3">SHOP NOW</button>
+                                    </p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                  <img src="images/previous.svg" class="direction">
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                    <img src="images/next.svg" class="direction">
-                </a>
-              </div>
+                <div class="carousel-item">
+                    <img src="images/bg.png" alt="Los Angeles" width="100%" height="950px">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-6">
+                                    <img src="images/slider1-.png" height="543px"
+                                        class="w-100 imgInnerSlider" >
+                                    <h1>UNLEASH</h1>
+                                    <h2>YOUR INNER BEAST</h2>
+                                    <p>
+                                        <button class="btn btnShopHeader py-3">SHOP NOW</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/bg-main.png" alt="Los Angeles" width="100%" height="950px">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-5 col-md-6">
+                                    <img src="images/slider2.png" height="543px"
+                                        class="w-100 imgInnerSlider">
+                                    <h1>UNLEASH</h1>
+                                    <h2>YOUR INNER BEAST</h2>
+                                    <p>
+                                        <button class="btn btnShopHeader py-3">SHOP NOW</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <img src="images/previous.svg">
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <img src="images/next.svg">
+            </a>
         </div>
     </div>
+
     <!-- =========================================================== -->
     <div class="container pt-4">
         <div class="collection">
             <h4 class="entire">COLLECTION</h4>
             <h3 class="commit">NEW ARRIVALS</h3>
+        </div>
+        <div class="swiper-container container pt-4">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row py-3 justify-content-around">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/Tshirt.png" class="mx-auto d-block" height="105px">
+                                <p class="top-right">NEW</p>
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/shose.png" class="mx-auto d-block" height="105px">
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row py-3 justify-content-around">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/Tshirt.png" class="mx-auto d-block" height="105px">
+                                <p class="top-right">NEW</p>
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/shose.png" class="mx-auto d-block" height="105px">
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row py-3 justify-content-around">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/Tshirt.png" class="mx-auto d-block" height="105px">
+                                <p class="top-right">NEW</p>
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/shose.png" class="mx-auto d-block" height="105px">
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row py-3 justify-content-around">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/Tshirt.png" class="mx-auto d-block" height="105px">
+                                <p class="top-right">NEW</p>
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 pt-3">
+                            <div class="text-center">
+                                <img src="images/shose.png" class="mx-auto d-block" height="105px">
+                                <p class="commit text-center mb-0">men’s workout tee fit</p>
+                                <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination">
+                <img src="images/next.svg">
+            </div>
         </div>
     </div>
     <!-- ================================================================ -->
@@ -151,37 +266,40 @@
                     <p class="entire">your entire life is on the line, try to take it more lightly</p>
                     <div class="row pt-3">
                         <div class="col-lg-6">
-                            <p class="pText">By asking his London shoemaker to make a shorter boot that would be easier to wear with trousers and to switch from polished to waxed calfskin leather, a stylish waterproof boot was created.</p>
+                            <p class="pText">By asking his London shoemaker to make a shorter boot that would be easier
+                                to wear with trousers and to switch from polished to waxed calfskin leather, a stylish
+                                waterproof boot was created.</p>
                         </div>
                         <div class="col-lg-6">
-                            <p class="pText">the goal was to make a shorter boot that would be easier to wear with trousers and to switch from proof boot was created.</p>
+                            <p class="pText">the goal was to make a shorter boot that would be easier to wear with
+                                trousers and to switch from proof boot was created.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src="images/check.svg" class="mx-auto d-block" >
+                            <img src="images/check.svg" class="mx-auto d-block">
                             <p class="commit pt-2 text-center">QUALITY <br> VERIFIED</p>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src="images/drop.svg" class="mx-auto d-block" >
+                            <img src="images/drop.svg" class="mx-auto d-block">
                             <p class="commit pt-2 text-center">SWEAT <br> RESISTANT</p>
                         </div>
                         <div class="col-lg-3 col-md-4 col-6">
-                            <img src="images/wash.svg" class="mx-auto d-block" >
+                            <img src="images/wash.svg" class="mx-auto d-block">
                             <p class="commit pt-2 text-center">WASHABLE <br> MATERIAL</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <img src="images/img.svg" class="imgCross"><br>
-                    <img src="images/shirts.png" class="imgShirt">  
+                    <img src="images/shirts.png" class="imgShirt">
                 </div>
             </div>
         </div>
     </div>
 
     <!-- ============================================================== -->
-    
+
     <div class="jumbotron bg-white">
         <div class="container">
             <div class="collection">
@@ -618,24 +736,24 @@
     <script src="package/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          freeMode: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-          },
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
         });
-    //     $(window).on("scroll", function() {
-    //     if($(window).scrollTop() > 50) {
-    //         $(".header").addClass("active");
-    //     } else {
-    //         //remove the background property so it comes transparent again (defined in your css)
-    //     $(".header").removeClass("active");
-    //     }
-    // });
+        $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            $(".header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+        $(".header").removeClass("active");
+        }
+    });
     </script>
-    
+
 </body>
 
 </html>
