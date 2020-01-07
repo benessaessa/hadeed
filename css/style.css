@@ -132,10 +132,8 @@
 .newArrival{
   transition-timing-function: ease;
   transition: all .2s;
-  opacity: 0.8;
 }
 .newArrival:hover{
-  opacity: 1;
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -388,7 +386,7 @@
 @media screen and (max-width: 1024px) {
   .imgEdit {
     position: absolute;
-    right: -10px;
+    right: -30px;
     margin-top: -160px;
     width: 100%;
     bottom: -180px;
@@ -406,7 +404,7 @@
 }
 @media screen and (max-width: 1500px) {
   .imgEdit {
-    right: 70px !important;
+    right: -100px !important;
   }
 }
 @media screen and (max-width: 900px) {
