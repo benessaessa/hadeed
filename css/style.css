@@ -129,6 +129,16 @@
   color: #ffffff;
   border: solid 1.2px #c50a0a;
 }
+.newArrival{
+  transition-timing-function: ease;
+  transition: all .2s;
+  opacity: 0.8;
+}
+.newArrival:hover{
+  opacity: 1;
+  transform: scale(1.1);
+  cursor: pointer;
+}
 /* ======================================================================== */
 .cards img:hover {
   opacity: 0.8;
