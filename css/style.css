@@ -33,30 +33,30 @@
 
 /* ===================================================================================== */
 
-.header.active {
-    background-image: linear-gradient(to bottom, rgb(161, 8, 8) 27%, rgb(34, 32, 32));
-}
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0;
-    z-index: 10000;
-    transition: all 0.2s ease-in-out;
-    height: auto;
-    background-color:transparent;  
-    
-    text-align: center;
-    line-height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  transition: all 0.2s ease-in-out;
+  height: auto;
+  background-color: transparent;
+
+  text-align: center;
+  line-height: 40px;
+}
+.header.active { 
+  padding: 0.5rem 3rem !important;
+  background-color: white;
 }
 /* .navbar{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 27%, rgba(255, 255, 255, 0.5)), linear-gradient(to top, #ffffff 78%, rgba(0, 0, 0, 0) -2%);
 } */
 
 .navbar-brand img {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
 }
 .navbar-brand img:hover {
   opacity: 1;
@@ -81,18 +81,24 @@
   width: 46px;
 }
 .navbar-light .navbar-toggler {
-  border-color: white;
+  border-color: black;
   height: 40px;
 }
 .navbar-light .navbar-toggler-icon {
-  background-color: white;
+  background-color: black;
 }
-.imgInnerSlider{
-    margin:auto;
-    display: block;
+.imgInnerSlider {
+  margin: auto;
+  display: block;
 }
+.carousel-control-prev,
+  .carousel-control-next{
+    top: 500px !important;
+    bottom: unset;
+  } 
 .carousel-caption {
-  top: 270px;
+  bottom: 32%;
+  top: 30%;
 }
 .carousel-caption h1 {
   padding-top: 4rem;
@@ -108,10 +114,10 @@
   opacity: 0.7;
   letter-spacing: 0.5rem;
 }
-.imgInnerSlider{
-    position: absolute;
-    z-index: -1;
-    top:-100px;
+.imgInnerSlider {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
 }
 .btnShopHeader {
   background-color: #ffffff;
@@ -128,16 +134,16 @@
   color: #ffffff;
   border: solid 1.2px #c50a0a;
 }
-.newArrival{
+.newArrival {
   transition-timing-function: ease;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.newArrival:hover{
-  transform: scale(1.1);
+.newArrival:hover {
+  opacity: 0.8;
   cursor: pointer;
 }
 /* ======================================================================== */
-.cards img:hover {
+.cards img:hover, .cards2 img:hover{
   opacity: 0.8;
   cursor: pointer;
 }
@@ -145,13 +151,20 @@
   position: absolute;
   bottom: 14px;
   text-align: center;
-  left: 15%;
+  left: 10%;
 }
-.bottom-right h3 {
+.bottom-right2 {
+  position: absolute;
+  bottom: 14px;
+  text-align: center;
+  left: 10%;
+  top: 300px;
+}
+.bottom-right h3 ,.bottom-right2 h3 {
   font-size: 25px;
   font-family: "BankGothicMedium";
 }
-.bottom-right p {
+.bottom-right p ,.bottom-right2 p {
   font-size: 16px;
   opacity: 0.6;
   font-family: "BankGothicMedium";
@@ -170,6 +183,13 @@
   opacity: 0.6;
   font-size: 20px;
 }
+.nav-pills2 .nav-item .nav-link {
+  font-family: "BankGothicMedium";
+  color: #040404;
+  padding: 1.5rem;
+  opacity: 0.6;
+  font-size: 16px;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: white;
@@ -186,6 +206,12 @@
   font-family: "BankGothicMedium";
   opacity: 0.4;
   font-size: 20.2px;
+  color: #000000;
+}
+.pTextShoping {
+  font-family: "BankGothicMedium";
+  opacity: 0.4;
+  font-size: 17.2px;
   color: #000000;
 }
 .imgCross {
@@ -338,8 +364,91 @@
 .jumbotronFooter2 p {
   text-align: center;
 }
+/* =============================== Page Shoping ======================================= */
+.swiper-pagination-bullet {
+  height: 18px;
+  width: 18px;
+}
+/* =================================== Page Comming Soon =============================== */
+.nvLnkComming {
+  font-family: "BankGothicMedium";
+  letter-spacing: 9px;
+  font-size: 18px;
+  color: #ffffff;
+}
+.newsletter input::placeholder {
+  color: #303737;
+  font: italic;
+  font-family: "BankGothicMedium";
+  font-size: 18px;
+  opacity: 0.4;
+  letter-spacing: 0.1rem;
+}
+.newsletter button {
+  border-radius: 0;
+}
+.newsletter input,
+.newsletter .btn {
+  height: 4rem;
+  font-size: 20px;
+  /* border:2px solid #e02020; */
+}
+.newsletter .form-control {
+  width: 30%;
+}
+.btnSign {
+  background-color: #e02020;
+  padding: 1rem 2rem;
+  font-family: "BankGothicMedium";
+}
+.comming {
+  background-image: url(../images/comingSoon.jpg);
+  background-size: cover;
+}
+@media screen and (min-width:700px){
+  .comming{
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/* =========================================== Categories ===================== */
+.ctegoryHead{
+  background: url(../images/bgCategories.jpg);
+  background-size: cover;
+  margin-top: 100px;
+}
+.introduction h2{
+  color: #000000;
+  font-size: 28px;
+  font-family: "BankGothicMedium";
+}
+.introduction p a{
+  color: #c50a0a;
+  font-weight: 500;
+}
+.introduction h5{
+  color:#123761;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.introduction h6{
+  color: #0c2c50;
+  font-size: 18.2px;
+  font-weight: 500;
+  opacity: 0.7;
+  font-family: "BankGothicMedium";
+}
+
+/* ============================================ Check Out ===================== */
+.chekOutNav{
+  border-bottom: solid 1px #979797;
+}
+
+/* ============================================ Media Query ================= */
+
 @media screen and (min-width: 800px) {
-  
   .had {
     text-align: left !important;
   }
@@ -358,9 +467,9 @@
     padding-top: 9rem;
     padding-left: 10%;
   }
-  .imgInnerSlider{
-      margin-left: -1rem;
-      height: 500px;
+  .imgInnerSlider {
+    margin-left: -1rem;
+    height: 500px;
   }
   .btnShop {
     padding: 1rem 1rem;
@@ -381,16 +490,19 @@
     opacity: 0.7;
     letter-spacing: 0.5rem;
   }
-}
-@media screen and (max-width: 1024px) {
-  .imgEdit {
-    position: absolute;
-    right: -30px;
-    margin-top: -160px;
+  .btnSign {
+    display: block !important;
     width: 100%;
-    bottom: -180px;
+    border-radius: 5px !important;
+  }
+  .inptEmail {
+    width: 100% !important;
+    border-radius: 5px 5px 5px 5px !important;
   }
 }
+
+
+
 @media screen and (max-width: 1100px) {
   .imgCross {
     position: absolute;
@@ -400,12 +512,33 @@
     left: 10px;
     height: 400px;
   }
-}
-@media screen and (max-width: 1500px) {
   .imgEdit {
     right: -100px !important;
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .imgEdit {
+    right: -100px !important;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .imgEdit {
+    right: -100px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .imgEdit {
+    position: absolute;
+    right: -30px !important;
+    margin-top: -160px;
+    width: 100%;
+    bottom: -180px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .btnShopHeader {
     width: 230px;
@@ -440,7 +573,7 @@
   .nav-pills .nav-item .nav-link {
     padding: 1rem 1rem;
   }
-  .bottom-right {
+  .bottom-right ,.bottom-right2{
     left: 10%;
   }
   .bottom-right h3 {
@@ -453,6 +586,7 @@
     height: 400px;
   }
 }
+
 @media screen and (max-width: 320px) {
   .slider1 .carousel-item img {
     padding-right: 15rem;
@@ -461,6 +595,10 @@
     /* max-width: 90% !important; */
     margin-right: 68px !important;
   }
+  .newsletter input,
+  .newsletter .btn {
+    font-size: 17px;
+}
   .carousel-caption h1 {
     padding-top: 4rem;
     font-size: 38px;
@@ -471,46 +609,43 @@
     margin-left: -1rem;
   }
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 790px) {
   .direction {
     display: none;
   }
   .main {
     height: 790px;
   }
-  .carousel-control-prev,.carousel-control-next{
-      display: none;
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
   }
-  .navbar-expand-lg{
+  .navbar-expand-lg {
     padding: 1rem 1.5rem !important;
-}
+  }
+  .newsletter {
+    padding: 1rem;
+  }
+  .input-group-btn {
+    display: block !important;
+    width: 100% !important;
+    padding-top: 2rem;
+  }
+  .nvLnkComming {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  .img-fluid{
+    height: 800px !important;
+  }
+  .header.active{
+    padding:0.5rem 1rem !important;
+  }
 }
 
-/* .header {
-    position: fixed;
-    width: 100%;
-    padding: 0;
-    z-index: 10000;
-    transition: all 0.2s ease-in-out;
-    height: auto;
-    background-color:transparent;  
-    
-    text-align: center;
-    line-height: 40px;
-}
-.header.active {
-    background: #fff;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-} */
-@media screen and (min-width:1000px){
-    .navbar-expand-lg{
-        padding: 1rem 4rem !important;
-    }
-}
-/* =============================== Page Shoping ======================================= */
-.swiper-pagination-bullet{
-  height: 18px;
-  width: 18px;
+@media screen and (min-width: 1000px) {
+  .navbar-expand-lg {
+    padding: 2rem 4rem;
+  }
 }

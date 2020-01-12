@@ -10,8 +10,20 @@ var swiper = new Swiper('.swiper-container', {
 $(window).on("scroll", function() {
 if($(window).scrollTop() > 20) {
     $(".header").addClass("active");
-} else {
-    //remove the background property so it comes transparent again (defined in your css)
-$(".header").removeClass("active");
-}
+    // $(".changeLogo").addA
+    $('.navbar .navbar-brand img').attr('src','images/hadid-logo-black.svg');
+    $('.chekOutNav .brand2 img').attr('src','images/language-black.svg');
+    $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language-black.svg');
+    $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/shoping-red.png');
+    $('.nav-link').css("color","black");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+    $(".header").removeClass("active");
+    $('.navbar .navbar-brand img').attr('src','images/logo.png');
+    $('.navbar .brand2 img').attr('src','images/logo.svg');
+    $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language.svg');
+    $('.navbar-nav .nav-item .nav-link .languageBlack').attr('src','images/language-black.svg');
+    $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/shoping.png');
+    $('.nav-link').css("color","white");
+    }
 });
