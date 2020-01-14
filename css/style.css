@@ -56,7 +56,6 @@
 
 .navbar-brand img {
   width: 100%;
-  height: 100%;
 }
 .navbar-brand img:hover {
   opacity: 1;
@@ -175,7 +174,9 @@
   display: flex;
   justify-content: center;
 }
-
+.nav-pills2{
+  border-bottom: 1px solid #e4eaee;
+}
 .nav-pills .nav-item .nav-link {
   font-family: "BankGothicMedium";
   color: #040404;
@@ -185,7 +186,7 @@
 }
 .nav-pills2 .nav-item .nav-link {
   font-family: "BankGothicMedium";
-  color: #040404;
+  color: #d4d9dd;
   padding: 1.5rem;
   opacity: 0.6;
   font-size: 16px;
@@ -317,6 +318,22 @@
   font-weight: bold;
   font-family: "futura-medium";
 }
+.btnShopH{
+  background-color: white;
+  border-radius: 0;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  font-size: 13.2px;
+  text-transform: uppercase;
+  letter-spacing: 5.2px;
+  font-weight: bold;
+  font-family: "futura-medium";
+}
+.btnShopH:hover {
+  background-color: #c50a0a;
+  color: white;
+  border: 1px solid #c50a0a;
+}
 .btnShop:hover {
   background-color: #ffffff;
   color: #c50a0a !important;
@@ -417,7 +434,7 @@
 .ctegoryHead{
   background: url(../images/bgCategories.jpg);
   background-size: cover;
-  margin-top: 100px;
+  margin-top: 94px;
 }
 .introduction h2{
   color: #000000;
@@ -443,9 +460,84 @@
 
 /* ============================================ Check Out ===================== */
 .chekOutNav{
-  border-bottom: solid 1px #979797;
+  border-bottom: solid 1.2px #e2d8d8;
+}
+.formCheckOut .form-control{
+  height: 54px;
+  border-radius: 3px;
+  border: solid 1px #dde3e8;
+  background-color: #ffffff;
+}
+.formCheckOut label{
+  color: #d4d9dd;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.formCheckOut .form-control:focus{
+  box-shadow: none;
+  border: 1px solid #71b6ef;
+}
+.btnContinue{
+  height: 48px;
+  background-color: #000000;
+  font-family: "BankGothicMedium";
+  color: #ffffff;
 }
 
+.btnContinue:hover{
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000;
+}
+
+.back{
+  color: #788995;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.shopCart{
+  background-color:#f3f3f3;
+}
+
+.badge-danger{
+  border-radius: 50%;
+}
+
+.media img{
+  background-color: #ffffff;
+  padding: 0.5rem;
+}
+
+.media p{
+  color: #788995;
+  font-weight: 500;
+}
+
+.have{
+  font-size: 14px;
+  color: #1b2125;
+}
+
+.subt{
+  font-size: 14px;
+  color: #788995;
+}
+
+.tot span{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ============================================ Orders ===================== */
+.bankGothFont{
+  font-family: "BankGothicMedium";
+}
+.bankGothFontOpacity{
+  font-family: "BankGothicMedium";
+  opacity: 0.5;
+}
 /* ============================================ Media Query ================= */
 
 @media screen and (min-width: 800px) {
@@ -647,5 +739,8 @@
 @media screen and (min-width: 1000px) {
   .navbar-expand-lg {
     padding: 2rem 4rem;
+  }
+  .brand3{
+    padding-left: 3.5rem;
   }
 }

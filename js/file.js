@@ -11,8 +11,8 @@ $(window).on("scroll", function() {
 if($(window).scrollTop() > 20) {
     $(".header").addClass("active");
     // $(".changeLogo").addA
-    $('.navbar .navbar-brand img').attr('src','images/hadid-logo-black.svg');
-    $('.chekOutNav .brand2 img').attr('src','images/language-black.svg');
+    $('.navbar .navbar-brand img').attr('src','images/ad.png');
+    $('.navbar .brandShop img').attr('src','images/hadid-logo-black.svg');
     $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language-black.svg');
     $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/shoping-red.png');
     $('.nav-link').css("color","black");
@@ -20,7 +20,7 @@ if($(window).scrollTop() > 20) {
         //remove the background property so it comes transparent again (defined in your css)
     $(".header").removeClass("active");
     $('.navbar .navbar-brand img').attr('src','images/logo.png');
-    $('.navbar .brand2 img').attr('src','images/logo.svg');
+    $('.navbar .brandShop img').attr('src','images/ad.png');
     $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language.svg');
     $('.navbar-nav .nav-item .nav-link .languageBlack').attr('src','images/language-black.svg');
     $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/shoping.png');

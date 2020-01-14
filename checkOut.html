@@ -17,8 +17,8 @@
     <!-- ======================== Header ================================= -->
     <div class="container">
         <header>
-            <nav class="navbar chekOutNav navbar-expand-lg navbar-light header bg-white mb-5 sticky-top">
-                <a class="navbar-brand brand2" href="#"><img src="images/logo.svg"></a>
+            <nav class="navbar chekOutNav py-3 navbar-expand-lg navbar-light header bg-white mb-5 sticky-top">
+                <a class="navbar-brand brand2" href="#"><img src="images/ad.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -40,14 +40,7 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a href="#" class="nav-link pr-3">
-                                <img class="languageBlack" src="images/language-black.svg">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <img src="images/shoping-red.png">
-                            </a>
+                            <button class="btn btn-white btnShopH">Shop Now</button>
                         </li>
                     </ul>
                 </div>
@@ -56,8 +49,9 @@
     </div>
     <!-- ======================== End of Header -->
 
+    <!-- ============================================= Tabs ==============================-->
     <div class="container py-5">
-        <div class="row pt-5">
+        <div class="row py-5">
             <div class="col-lg-8">
                 <ul class="nav nav-pills nav-pills2 pt-5" role="tablist">
                     <li class="nav-item">
@@ -75,24 +69,24 @@
                 <div class="tab-content pb-3">
                     <div id="customerInfo" class="container tab-pane active"><br>
                         <h4 class="commit pt-4">Customer Information</h4>
-                        <form action="#">
+                        <form action="#" class="formCheckOut">
                             <div class="row pt-4 pb-3">
                                 <div class="col">
                                     <label for="First">First Name</label>
-                                    <input type="text" class="form-control" placeholder="First name">
+                                    <input type="text" class="form-control">
                                 </div>
                                 <div class="col">
                                     <label for="First">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Last name">
+                                    <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label>ADDRESS</label>
-                                <input type="text" class="form-control" placeholder="ADDRESS">
+                                <input type="text" class="form-control">
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <label for="First">Country</label>
+                                    <label>Country</label>
                                     <select class="form-control">
                                         <option disabled selected>Selct Your Country</option>
                                         <option> Egypt </option>
@@ -106,37 +100,71 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="row pt-3">
+                                <div class="col">
+                                    <label for="First">POSTAL CODE</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-append">
+                                          <span class="input-group-text bg-white" id="basic-addon2">FIND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="First">Phone number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col pt-3">
+                                    <a href="#" class="back"><i class="fa fa-long-arrow-alt-left pr-2 mt-1"></i> Return to Shop</a>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btnContinue btn-block text-left">CONTINUE <i class="fa fa-long-arrow-alt-right d-flex float-right pt-1"></i></button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <div id="shopInfo" class="container tab-pane fade"><br>
                         <div class="row pt-4 justify-content-around">
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-6 pt-3">
-                                <div class="text-center newArrival">
-                                    <img src="images/shose.png" class="mx-auto d-block" height="105px">
-                                    <p class="commit text-center mb-0">men’s workout tee fit</p>
-                                    <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 pt-3">
+                                <div class="card p-3">
+                                    <h2><span><i class="fa fa-home"></i></span>
+                                        <div class="custom-control custom-radio float-right">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+                                            <label class="custom-control-label" for="customRadio"></label>
+                                        </div>
+                                    </h2>
+                                    <p class="commit mb-0">Moneer Kilany </p>
+                                    <p class="commit mb-0"> Unit 2 Green Mount Retail </p> 
+                                    <p class="commit mb-0">Park</p>
+                                    <p class="commit mb-0">Halifax, HX1 5QN</p>
+                                    <p class="commit mb-0"> Tel:  0344 332 5931</p>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-6 pt-3">
-                                <div class="text-center newArrival">
-                                    <img src="images/skirt.png" class="mx-auto d-block" height="105px">
-                                    <p class="commit text-center mb-0">men’s workout tee fit</p>
-                                    <a href="#" class="text-danger text-center salary">795 EGP</a>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-12 pt-3">
+                                <div class="card p-3">
+                                    <h2><span><i class="fa fa-home"></i></span>
+                                        <div class="custom-control custom-radio float-right">
+                                            <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx2">
+                                            <label class="custom-control-label" for="customRadio2"></label>
+                                        </div>
+                                    </h2>
+                                    <p class="commit mb-0">Moneer Kilany </p>
+                                    <p class="commit mb-0"> Unit 2 Green Mount Retail </p> 
+                                    <p class="commit mb-0">Park</p>
+                                    <p class="commit mb-0">Halifax, HX1 5QN</p>
+                                    <p class="commit mb-0"> Tel:  0344 332 5931</p>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-6 pt-3">
-                                <div class="text-center newArrival">
-                                    <img src="images/shorts.png" class="mx-auto d-block" height="105px">
-                                    <p class="commit text-center mb-0">men’s workout tee fit</p>
-                                    <a href="#" class="text-danger text-center salary">795 EGP</a>
-                                </div>
+                        </div>
+                        <button class="btn bg-white text-primary mt-4"> + Add New Address </button>
+                        <div class="row pt-4">
+                            <div class="col pt-3">
+                                <a href="#" class="back"><i class="fa fa-long-arrow-alt-left pr-2 mt-1"></i> Return to Shop</a>
                             </div>
-                            <div class="col-lg-2 col-md-4 col-sm-6 col-6 pt-3">
-                                <div class="text-center newArrival">
-                                    <img src="images/Tshirt.png" class="mx-auto d-block" height="105px">
-                                    <p class="commit text-center mb-0">men’s workout tee fit</p>
-                                    <a href="#" class="text-danger text-center salary">795 EGP</a>
-                                </div>
+                            <div class="col">
+                                <button class="btn btnContinue btn-block text-left">CONTINUE <i class="fa fa-long-arrow-alt-right d-flex float-right pt-1"></i></button>
                             </div>
                         </div>
                     </div>
@@ -179,6 +207,29 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="shopCart mt-5 px-3 py-4">
+                    <h4 class="commit">Shopping Cart <span class="badge badge-danger d-flext float-right">2</span></h4><hr>
+                    <div class="media">
+                        <img src="images/shortLg.png" class="mr-3" width="27%" height="27%">
+                        <div class="media-body">
+                          <h6 class="mt-1 commit">Lightweight College Backpack</h6>
+                          <p>EGP 99.90</p>
+                        </div>
+                    </div>
+                    <div class="media pt-2 pb-2">
+                        <img src="images/shorts.png" class="mr-3" width="27%" height="27%">
+                        <div class="media-body">
+                          <h6 class="mt-1 commit">Business Casual Leather Watch</h6>
+                          <p>EGP 69.90</p>
+                        </div>
+                    </div><hr>
+                    <p class="have">Have a Voucher? <span class="float-right"><i class="fa fa-chevron-down"></i></span></p><hr>
+                    <h6 class="subt">Subtotal <span class="float-right">€ 169.80</span></h6>
+                    <h6 class="subt pt-2">Subtotal <span class="float-right">€ 169.80</span></h6><hr>
+                    <h6 class="tot">Total <span class="float-right">EGP 169.80</span></h6>
                 </div>
             </div>
         </div>
@@ -236,21 +287,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2 pt-2">
-                        <p class="pt-1 had"> HADID <img src="images/footerLogo.svg"> HADID</p>
+                        <p class="had"> <img src="images/ad.png"> </p>
                     </div>
-                    <div class="col-lg-2 pt-3">
+                    <div class="col-lg-2 pt-4">
                         <p><a href="#" class="footLink">MEN’S COLLECTION</a></p>
                     </div>
-                    <div class="col-lg-2 pt-3">
+                    <div class="col-lg-2 pt-4">
                         <p><a href="#" class="footLink">WOMEN’S COLLECTION</a></p>
                     </div>
-                    <div class="col-lg-2 pt-3">
+                    <div class="col-lg-2 pt-4">
                         <p class="text-center"><a href="#" class="footLink">ABOUT US</a></p>
                     </div>
-                    <div class="col-lg-2 pt-3">
+                    <div class="col-lg-2 pt-4">
                         <p><a href="#" class="footLink">SHOP NOW</a></p>
                     </div>
-                    <div class="col-lg-2 pt-1">
+                    <div class="col-lg-2 pt-2">
                         <a href="#" class="shopNow d-flex justify-content-center">SHOP NOW</a>
                     </div>
                 </div>
@@ -262,16 +313,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script>
-        $(window).on("scroll", function() {
-if($(window).scrollTop() > 20) {
-    $(".header").addClass("active");
-    $('.chekOutNav .brand2 img').attr('src','images/hadid-logo-black.svg');
-    } else {
+//         $(window).on("scroll", function() {
+// if($(window).scrollTop() > 20) {
+//     $(".header").addClass("active");
+//     $('.chekOutNav .brand2 img').attr('src','images/hadid-logo-black.svg');
+//     } else {
         //remove the background property so it comes transparent again (defined in your css)
-    $(".header").removeClass("active");
-    $('.navbar .brand2 img').attr('src','images/logo.svg');
-    }
-});
+    // $(".header").removeClass("active");
+    // $('.navbar .brand2 img').attr('src','images/logo.svg');
+//     }
+// });
     </script>
 </body>
 
