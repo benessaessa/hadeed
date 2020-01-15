@@ -30,7 +30,17 @@
     url("../fonts/BankGothicMedium.otf") format("otf"),
     url("../fonts/BankGothicMedium.otf") format("truetype");
 }
-
+@font-face {
+  font-family: "square";
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: normal;
+  src: url("../fonts/Square.ttf");
+  src: local("square"),
+    url("../fonts/Square.ttf") format("ttf"),
+    url("../fonts/Square.ttf") format("truetype");
+}
 /* ===================================================================================== */
 
 .header {
@@ -250,7 +260,7 @@
   border-radius: 50%;
   top: 12px;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem 0.5rem;
   font-size: 13px;
   right: 3px;
 }
@@ -382,9 +392,37 @@
   text-align: center;
 }
 /* =============================== Page Shoping ======================================= */
+.selecSize li{
+  border: none;
+  cursor: pointer;
+}
+.selectColor li{
+  margin-right: 1rem;
+  height: 34px;
+  width: 34px;
+}
+.bg-selected{
+  border: 2px solid #151212 !important;
+  border-radius: 5px;
+}
+.bg-selectedC{
+  border: 2px solid #151212 !important;
+  border-radius: 0;
+  padding: 5px;
+}
 .swiper-pagination-bullet {
-  height: 18px;
-  width: 18px;
+  display: none;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+  position: absolute;
+  top: 30px;
+  right: 10%;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+  position: absolute;
+  top: 30px;
+  right: 20%;
+  left: unset;
 }
 /* =================================== Page Comming Soon =============================== */
 .nvLnkComming {
