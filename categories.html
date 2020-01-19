@@ -26,7 +26,7 @@
                 </button>
     
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link text-dark" href="#"> MEN’S COLLECTION <span
                                     class="sr-only">(current)</span></a>
@@ -40,7 +40,18 @@
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <button class="btn btn-white btnShopH">Shop Now</button>
+                            <button class="btn btn-white mt-2 btnShopH">Shop Now</button>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link pr-3">
+                                <img src="images/language-black.svg">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <img class="imgShop" src="images/ArtboardRed.png">
+                            </a>
+                            <span class="badge badge-danger dangerrr">5</span>
                         </li>
                     </ul>
                 </div>
@@ -371,6 +382,22 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
             },
+        breakpoints: {
+            // when window width is <= 499px
+            320: {
+                slidesPerView: 1,
+                spaceBetweenSlides: 20
+            },
+            700:{
+                slidesPerView: 2,
+                spaceBetweenSlides: 50
+            },
+            // when window width is <= 999px
+            999: {
+                slidesPerView: 5,
+                spaceBetweenSlides: 30
+            }
+        }
         });
         $(window).on("scroll", function() {
         if($(window).scrollTop() > 20) {

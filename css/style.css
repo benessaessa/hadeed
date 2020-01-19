@@ -42,7 +42,15 @@
     url("../fonts/Square.ttf") format("truetype");
 }
 /* ===================================================================================== */
-
+.dangerrr{
+  position: absolute;
+  background-color: #c50a0a;
+  padding-top: 6px;
+  width: 25px;
+  height: 25px;
+  margin-left: 1.5rem;
+  margin-top: -1.5rem !important;
+}
 .header {
   position: fixed;
   top: 0;
@@ -85,9 +93,10 @@
   opacity: 1;
 }
 
-.navbar-nav .nav-item .nav-link img {
+.navbar-nav .nav-item .nav-link img{
   height: 46px;
   width: 46px;
+  opacity: 1 !important;
 }
 .navbar-light .navbar-toggler {
   border-color: black;
@@ -96,24 +105,31 @@
 .navbar-light .navbar-toggler-icon {
   background-color: black;
 }
+.imgBackSlider{
+  width: 100%;
+  object-fit: cover;
+  height: 800px;
+  object-position: 100% 0px;
+}
 .imgInnerSlider {
   margin: auto;
   display: block;
 }
 .carousel-control-prev,
   .carousel-control-next{
-    top: 500px !important;
+    top: 360px !important;
     bottom: unset;
   } 
 .carousel-caption {
   bottom: 32%;
   top: 30%;
+  padding-top: 3.6rem;
 }
 .carousel-caption h1 {
-  padding-top: 4rem;
+  padding-top: 1rem;
   font-size: 80px;
   font-family: "BankGothicMedium";
-  margin-left: -140px;
+  margin-left: -144px;
   letter-spacing: 2rem;
 }
 .carousel-caption h2 {
@@ -126,17 +142,22 @@
 .imgInnerSlider {
   position: absolute;
   z-index: -1;
-  top: -100px;
+  width: 70%;
+  height:422px;
+  top: -110px;
+}
+.imgInnerSlider2{
+  top: -110px !important;
 }
 .btnShopHeader {
   background-color: #ffffff;
   border: solid 1.2px #ffffff;
-  width: 320px;
+  width: 250px;
   font-family: "futura-bold";
   font-size: 14px;
   letter-spacing: 8px;
-  margin-top: 3rem;
-  margin-left: 1.8rem;
+  margin-top: 1rem;
+  margin-left: -0.4rem;
 }
 .btnShopHeader:hover {
   background-color: #c50a0a;
@@ -167,7 +188,7 @@
   bottom: 14px;
   text-align: center;
   left: 10%;
-  top: 300px;
+  top: 350px;
 }
 .bottom-right h3 ,.bottom-right2 h3 {
   font-size: 25px;
@@ -332,7 +353,7 @@
   background-color: white;
   border-radius: 0;
   border: 1px solid black;
-  padding: 1rem 2rem;
+  padding: 0.8rem 2rem;
   font-size: 13.2px;
   text-transform: uppercase;
   letter-spacing: 5.2px;
@@ -399,6 +420,7 @@
 .selectColor li{
   margin-right: 1rem;
   height: 34px;
+  cursor: pointer;
   width: 34px;
 }
 .bg-selected{
@@ -408,7 +430,7 @@
 .bg-selectedC{
   border: 2px solid #151212 !important;
   border-radius: 0;
-  padding: 5px;
+  padding: 0px !important;
 }
 .swiper-pagination-bullet {
   display: none;
@@ -568,6 +590,10 @@
   font-weight: bold;
 }
 
+.custom-control .custom-control-label{
+  cursor: pointer;
+}
+
 /* ============================================ Orders ===================== */
 .bankGothFont{
   font-family: "BankGothicMedium";
@@ -575,6 +601,10 @@
 .bankGothFontOpacity{
   font-family: "BankGothicMedium";
   opacity: 0.5;
+}
+/* ============================================= Congrats =================== */
+.congrats{
+  padding-top: 7.5rem;
 }
 /* ============================================ Media Query ================= */
 
@@ -597,25 +627,33 @@
     padding-top: 9rem;
     padding-left: 10%;
   }
+  .congrats{
+    padding-top: 1rem !important;
+  }
   .imgInnerSlider {
-    margin-left: -1rem;
+    margin-left: 0rem;
     height: 500px;
+    margin-top: -1.2rem;
+    width: 100%;
+  }
+  .imgInnerSlider2{
+    margin-top: -1.2rem;
   }
   .btnShop {
     padding: 1rem 1rem;
     font-size: 11.5px;
   }
   .carousel-caption h1 {
-    padding-top: 4rem;
+    padding-top: 5rem !important;
     font-size: 46px;
     font-family: "BankGothicMedium";
-    margin-left: -40px;
+    margin-left: -36px !important;
     letter-spacing: 0.6rem;
   }
   .carousel-caption h2 {
     font-family: "BankGothicMedium";
-    margin-left: -70px;
-    margin-right: -100px;
+    margin-left: -96px !important;
+    margin-right: -100px !important;
     font-size: 30px;
     opacity: 0.7;
     letter-spacing: 0.5rem;
@@ -670,9 +708,15 @@
 }
 
 @media screen and (max-width: 900px) {
+  .congrats{
+    padding-top: 4rem;
+  }
   .btnShopHeader {
     width: 230px;
     margin-left: 0rem;
+  }
+  .bottom-right2 {
+    top: 320px;
   }
 
   .couchEdit {
@@ -716,36 +760,24 @@
     height: 400px;
   }
 }
-
-@media screen and (max-width: 320px) {
-  .slider1 .carousel-item img {
-    padding-right: 15rem;
-    height: 450px;
-    width: 310px !important;
-    /* max-width: 90% !important; */
-    margin-right: 68px !important;
-  }
-  .newsletter input,
-  .newsletter .btn {
-    font-size: 17px;
-}
-  .carousel-caption h1 {
-    padding-top: 4rem;
-    font-size: 38px;
-    margin-left: -35px;
-    letter-spacing: 0.6rem;
-  }
-  .btnShopHeader {
-    margin-left: -1rem;
-  }
-}
-
 @media screen and (max-width: 790px) {
+  .imgInnerSlider{
+    width: 100% !important;
+  }
   .direction {
     display: none;
   }
   .main {
     height: 790px;
+  }
+  .carousel-caption h2{
+    margin-right: -130px;
+  }
+  .carousel-caption h1{
+    margin-left: -196px;
+  }
+  .btnShopHeader{
+    margin-left: 1rem;
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -753,6 +785,10 @@
   }
   .navbar-expand-lg {
     padding: 1rem 1.5rem !important;
+  }
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding-left: 0.5rem;
+    text-align: left;
   }
   .newsletter {
     padding: 1rem;
@@ -772,13 +808,105 @@
   .header.active{
     padding:0.5rem 1rem !important;
   }
+  .top-right{
+    right: 60px;
+  }
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+    right: 10%;
+  }
+  .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+    right: 25%;
+  }
 }
+@media screen and (max-width: 320px) {
+  .slider1 .carousel-item img {
+    padding-right: 15rem;
+    height: 450px;
+    width: 310px !important;
+    /* max-width: 90% !important; */
+    margin-right: 68px !important;
+  }
+  .newsletter input,
+  .newsletter .btn {
+    font-size: 17px;
+}
+  .carousel-caption h1 {
+    padding-top: 9rem !important;
+    font-size: 38px;
+    margin-left: -35px !important;
+    letter-spacing: 0.6rem;
+  }
+  .carousel-caption h2{
+    margin-right: -130px !important;
+    margin-left: -120px !important;
+  }
+  .btnShopHeader {
+    margin-left: -1rem;
+  }
+}
+
+
 
 @media screen and (min-width: 1000px) {
   .navbar-expand-lg {
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 2rem 5rem;
   }
   .brand3{
     padding-left: 3.5rem;
+  }
+}
+@media screen and (max-width:1024px){
+  .imgInnerSlider{
+    top: -70px !important;
+    right: 0;
+    left: 0;
+  }
+  .imgInnerSlider2{
+    top: -80px !important;
+  }
+  .navbar .navbar-nav .nav-item .nav-link{
+    padding-left: 1.5rem !important;
+  }
+  .carousel-caption h1{
+    padding-top: 3rem;
+  }
+  .btnShopHeader{
+    margin-left: -0.2rem;
+    width: 183px;
+  }
+}
+@media screen and (min-width:1400px){
+  .carousel-control-prev,.carousel-control-next{
+    top: 430px !important;
+  }
+  .imgInnerSlider{
+    width: 80%;
+    height: 510px;
+  }
+  .btnShopHeader{
+    margin-left:0px !important;
+  }
+  .carousel-caption h1{
+    margin-left: -110px;
+    margin-top: 6rem;
+  }
+  .carousel-caption h2{
+    margin-left: -101px;
+    margin-right: -90px;
+  }
+  .imgBackSlider{
+    width: 100%;
+    object-fit: cover;
+    height: 800px;
+    object-position: 10% 20%;
+  }
+}
+@media screen and (min-width:1211px){
+  .imgEdit{
+    right: -30px !important;
+  }
+  .imgInnerSlider{
+    right: 0;
+    left: 0;
   }
 }

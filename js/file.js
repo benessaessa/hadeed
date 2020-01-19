@@ -1,6 +1,6 @@
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 30,
+    slidesPerView: 5,
+    // spaceBetween: 15,
     freeMode: true,
     pagination: {
         el: '.swiper-pagination',
@@ -10,6 +10,22 @@ var swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
         },
+    breakpoints: {
+        // when window width is <= 499px
+        320: {
+            slidesPerView: 1,
+            spaceBetweenSlides: 20
+        },
+        700:{
+            slidesPerView: 2,
+            spaceBetweenSlides: 50
+        },
+        // when window width is <= 999px
+        999: {
+            slidesPerView: 5,
+            spaceBetweenSlides: 15
+        }
+    }
     });
 $(window).on("scroll", function() {
 if($(window).scrollTop() > 20) {
@@ -18,7 +34,7 @@ if($(window).scrollTop() > 20) {
     $('.navbar .navbar-brand img').attr('src','images/Artboardcopy5.png');
     $('.navbar .brandShop img').attr('src','images/hadid-logo-black.svg');
     $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language-black.svg');
-    $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/shoping-red.png');
+    $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/ArtboardRed.png');
     $('.nav-link').css("color","black");
     } else {
         //remove the background property so it comes transparent again (defined in your css)
@@ -27,7 +43,7 @@ if($(window).scrollTop() > 20) {
     $('.navbar .brandShop img').attr('src','images/ad.png');
     $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language.svg');
     $('.navbar-nav .nav-item .nav-link .languageBlack').attr('src','images/language-black.svg');
-    $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/shoping.png');
+    $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/Artboardwhite.png');
     $('.nav-link').css("color","white");
     }
 });
