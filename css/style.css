@@ -734,7 +734,7 @@
     margin-left: -196px;
   }
   .btnShopHeader{
-    margin-left: 1rem;
+    margin-left: 1rem !important;
   }
   .carousel-control-prev,
   .carousel-control-next {
