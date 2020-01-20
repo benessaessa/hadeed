@@ -667,7 +667,7 @@
     padding-top: 4rem;
   }
   .btnShopHeader {
-    width: 230px;
+    width: 230px !important;
     margin-left: 0rem;
   }
   .bottom-right2 {
@@ -847,6 +847,7 @@
   }
   .btnShopHeader {
     margin-left: -1rem;
+    width: 200px !important;
   }
   .imgInnerSlider{
     height: 450px !important;
