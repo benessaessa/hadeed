@@ -44,7 +44,7 @@
 /* ===================================================================================== */
 .dangerrr{
   position: absolute;
-  background-color: #c50a0a;
+  background-color: #fd0d0d;
   padding-top: 6px;
   width: 25px;
   height: 25px;
@@ -83,14 +83,14 @@
   font-family: "futura-medium";
   font-size: 11px;
   letter-spacing: 4.33px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   padding-left: 2.5rem;
   font-weight: bold;
   color: #ffffff;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .navbar-nav .nav-item .nav-link img{
@@ -157,7 +157,7 @@
   font-size: 14px;
   letter-spacing: 8px;
   margin-top: 1rem;
-  margin-left: -0.4rem;
+  margin-left: -0.2rem;
 }
 .btnShopHeader:hover {
   background-color: #c50a0a;
@@ -233,6 +233,8 @@
 }
 .boxShirt {
   background-color: #f3f3f3;
+  padding-right: 0;
+  padding-left: 7rem;
 }
 .pText {
   font-family: "BankGothicMedium";
@@ -249,17 +251,18 @@
 .imgCross {
   position: absolute;
   margin-top: 10px;
-  top: -50px;
-  right: 0;
-  left: 130px;
+  top: -70px;
+  right: 0px;
+  width: unset;
   height: 400px;
 }
 .imgShirt {
   position: absolute;
   bottom: 0;
-  top: 120px;
-  left: -130px;
-  width: 150%;
+  top: 130px;
+  right: 0px;
+  width: 109%;
+  height: 87%;
 }
 .salary {
   border-bottom: 2px solid #c50a0a;
@@ -337,7 +340,7 @@
 }
 .imgEdit {
   position: absolute;
-  right: -100px;
+  right: 0px;
   margin-top: -160px;
   width: 100%;
   bottom: -180px;
@@ -438,13 +441,16 @@
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
   position: absolute;
   top: 30px;
-  right: 10%;
+  right: 6%;
 }
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next{
   position: absolute;
   top: 30px;
-  right: 20%;
+  right: 10%;
   left: unset;
+}
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after,.swiper-button-next:after,.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+  content: none;
 }
 /* =================================== Page Comming Soon =============================== */
 .nvLnkComming {
@@ -669,41 +675,29 @@
   }
 }
 
-
-
 @media screen and (max-width: 1100px) {
   .imgCross {
     position: absolute;
     margin-top: 10px;
     top: -50px;
     right: 0;
-    left: 10px;
     height: 400px;
   }
   .imgEdit {
-    right: -100px !important;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .imgEdit {
-    right: -100px !important;
-  }
-}
-
-@media screen and (max-width: 1600px) {
-  .imgEdit {
-    right: -100px !important;
+    right: 0px !important;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .imgEdit {
     position: absolute;
-    right: -30px !important;
+    right: 10px !important;
     margin-top: -160px;
     width: 100%;
     bottom: -180px;
+  }
+  .imgShirt{
+    right: 0;
   }
 }
 
@@ -718,7 +712,9 @@
   .bottom-right2 {
     top: 320px;
   }
-
+  .boxShirt {
+    padding-left: 1rem;
+  }
   .couchEdit {
     position: relative;
     padding-top: 9rem;
@@ -739,7 +735,6 @@
     position: relative;
     width: 100%;
     top: 0;
-    left: -9px;
   }
   .btnShop {
     margin-bottom: 2rem;
@@ -760,6 +755,7 @@
     height: 400px;
   }
 }
+
 @media screen and (max-width: 790px) {
   .imgInnerSlider{
     width: 100% !important;
@@ -818,6 +814,7 @@
     right: 25%;
   }
 }
+
 @media screen and (max-width: 320px) {
   .slider1 .carousel-item img {
     padding-right: 15rem;
@@ -845,8 +842,6 @@
   }
 }
 
-
-
 @media screen and (min-width: 1000px) {
   .navbar-expand-lg {
     padding: 2rem 4rem 2rem 5rem;
@@ -855,9 +850,11 @@
     padding-left: 3.5rem;
   }
 }
+
 @media screen and (max-width:1024px){
   .imgInnerSlider{
-    top: -70px !important;
+    top: -100px !important;
+    width: 80% !important;
     right: 0;
     left: 0;
   }
@@ -875,6 +872,7 @@
     width: 183px;
   }
 }
+
 @media screen and (min-width:1400px){
   .carousel-control-prev,.carousel-control-next{
     top: 430px !important;
@@ -900,11 +898,46 @@
     height: 800px;
     object-position: 10% 20%;
   }
-}
-@media screen and (min-width:1211px){
-  .imgEdit{
-    right: -30px !important;
+  .boxShirt{
+    height: 740px;
+    padding-left: 6rem;
   }
+  .imgShirt{
+    width: 80%;
+    height: 100%;
+  }
+  .pText{
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width:2000px){
+  .imgShirt{
+    height: 130%;
+  }
+}
+
+@media screen and (max-width:1145px){
+
+  .imgInnerSlider{
+    width: 80% !important;
+    height: 420px !important;
+  }
+}
+
+@media screen and (max-width:1250px){
+  .imgShirt{
+    right: 0px;
+  }
+  .imgCross{
+    right: 0;
+  }
+  .imgEdit{
+    right: 20px;
+  }
+}
+
+@media screen and (min-width:1211px){
   .imgInnerSlider{
     right: 0;
     left: 0;
