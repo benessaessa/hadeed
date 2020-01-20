@@ -674,8 +674,8 @@
     padding-top: 4rem;
   }
   .btnShopHeader {
-    width: 230px !important;
-    margin-left: 0rem;
+    width: 200px !important;
+    margin-left: 0;
   }
   .bottom-right2 {
     top: 320px;
@@ -749,7 +749,7 @@
     margin-left: -196px;
   }
   .btnShopHeader{
-    margin-left: 1rem !important;
+    margin-left: 0rem !important;
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -813,8 +813,8 @@
     margin-left: -200px;
   }
   .btnShopHeader{
-    margin-left: -2.2rem;
-    width: 183px;
+    margin-left: -0.6rem;
+    width: 240px;
   }
 }
 
@@ -933,7 +933,7 @@
 }
   .carousel-caption h1 {
     padding-top: 4rem !important;
-    font-size: 38px;
+    font-size: 41px;
     margin-left: -35px !important;
     letter-spacing: 0.6rem;
   }
