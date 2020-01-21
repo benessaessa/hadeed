@@ -649,7 +649,7 @@
 @media screen and (max-width: 1024px) {
   .imgEdit {
     position: absolute;
-    right: 10px !important;
+    right: 0px !important;
     margin-top: -160px;
     width: 100%;
     bottom: -180px;
@@ -674,7 +674,7 @@
     padding-top: 4rem;
   }
   .btnShopHeader {
-    width: 200px !important;
+    width: 235px !important;
     margin-left: 0;
   }
   .bottom-right2 {
@@ -756,7 +756,7 @@
     margin-left: -196px;
   }
   .btnShopHeader{
-    margin-left: 0rem !important;
+    margin-left: 1rem !important;
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -823,6 +823,9 @@
     margin-left: -0.6rem;
     width: 240px;
   }
+  .imgInnerSlider{
+    width: 268px !important;
+  }
 }
 
 @media screen and (min-width:1400px){
@@ -861,10 +864,14 @@
   }
 }
 
-@media screen and (max-width:1090px){
+@media screen and (max-width:767px){
   .imgInnerSlider{
-    width: 88% !important;
+    width: 294px !important;
+    margin-left: 6rem;
     height: 420px !important;
+  }
+  .carousel-caption h1{
+    margin-left: -5rem;
   }
 }
 
@@ -1011,7 +1018,7 @@
     right: 0;
   }
   .imgEdit{
-    right: 20px;
+    right: 0px;
   }
 }
 
