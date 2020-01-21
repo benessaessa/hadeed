@@ -723,6 +723,9 @@
   .cards img {
     height: 400px;
   }
+  .dangerrr{
+    left: 46px;
+  }
 }
 
 
@@ -873,6 +876,9 @@
   }
   .carousel-caption h1{
     margin-left: -6rem;
+  }
+  .dangerrr{
+    left: 46px;
   }
 }
 
