@@ -936,7 +936,7 @@
 
 @media screen and (max-width:426px){
   .imgInnerSlider{
-    margin-left: 0rem !important;
+    margin-left: -1rem !important;
   }
 }
 
