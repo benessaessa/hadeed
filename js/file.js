@@ -47,3 +47,12 @@ if($(window).scrollTop() > 20) {
     $('.nav-link').css("color","white");
     }
 });
+$(document).ready(function(){
+    if(window.innerWidth <= 780){
+        $('.navbar').css("background-color","white");
+        $('.nav-link').css("color","black");
+        $('.navbar-brand img').attr('src','images/Artboardcopy5.png');
+        $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language-black.svg');
+        $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/ArtboardRed.png');
+    }
+});

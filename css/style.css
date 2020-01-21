@@ -892,23 +892,24 @@
     padding-top: 1rem !important;
   }
   .imgBackSlider{
-    object-position: 49% 0px;
+    object-position: 64% 0px;
+    height: 700px;
   }
   .imgInnerSlider {
     margin-left: -1rem !important;
     height: 430px !important;
-    margin-top: -1.2rem;
+    margin-top: 0.8rem;
     width: 268px !important;
   }
   .imgInnerSlider2{
-    margin-top: -20px !important;
+    margin-top: 0.8rem !important;
   }
   .btnShop {
     padding: 1rem 1rem;
     font-size: 11.5px;
   }
   .btnShopHeader{
-    margin-top: 11.5rem;
+    margin-top: 14.5rem;
     width: 250px !important;
     margin-left: -0.5rem !important;
   }
@@ -972,7 +973,7 @@
   .btnShopHeader {
     margin-left: -1rem !important;
     width: 230px !important;
-    margin-top: 9rem;
+    margin-top: 12rem;
   }
   .imgInnerSlider{
     height: 390px !important;
