@@ -369,11 +369,13 @@
                 // $(".changeLogo").addA
                 $('.navbar .brandShop img').attr('src', 'images/Artboardcopy5.png');
                 $('.nav-link').css("color", "black");
+                $('.navbar').css("box-shadow","0px 0px 6px 0 rgba(3,3,3,1)");
             } else {
                 //remove the background property so it comes transparent again (defined in your css)
                 $(".header").removeClass("active");
                 $('.navbar .brandShop img').attr('src', 'images/hadidRed.png');
                 $('.nav-link').css("color", "white");
+                $('.navbar').css("box-shadow","none");
             }
         });
     </script>
