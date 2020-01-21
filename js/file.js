@@ -35,6 +35,7 @@ if($(window).scrollTop() > 20) {
     $('.navbar .brandShop img').attr('src','images/hadid-logo-black.svg');
     $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language-black.svg');
     $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/ArtboardRed.png');
+    $('.navbar').css("box-shadow","0px 0px 6px 0 rgba(3,3,3,1)");
     $('.nav-link').css("color","black");
     } 
     else if(window.innerWidth <= 780){
@@ -53,6 +54,7 @@ if($(window).scrollTop() > 20) {
     $('.navbar-nav .nav-item .nav-link .languageBlack').attr('src','images/language-black.svg');
     $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/Artboardwhite.png');
     $('.nav-link').css("color","white");
+    $('.navbar').css("box-shadow","none");
     }
 });
 $(document).ready(function(){
