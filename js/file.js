@@ -36,7 +36,15 @@ if($(window).scrollTop() > 20) {
     $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language-black.svg');
     $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/ArtboardRed.png');
     $('.nav-link').css("color","black");
-    } else {
+    } 
+    else if(window.innerWidth <= 780){
+        $('.navbar').css("background-color","white");
+        $('.nav-link').css("color","black");
+        $('.navbar-brand img').attr('src','images/Artboardcopy5.png');
+        $('.navbar-nav .nav-item .nav-link img:first').attr('src','images/language-black.svg');
+        $('.navbar-nav .nav-item .nav-link .imgShop').attr('src','images/ArtboardRed.png');
+    }
+    else {
         //remove the background property so it comes transparent again (defined in your css)
     $(".header").removeClass("active");
     $('.navbar .navbar-brand img').attr('src','images/had1.png');

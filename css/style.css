@@ -910,7 +910,7 @@
   }
   .btnShopHeader{
     margin-top: 14.5rem;
-    width: 250px !important;
+    width: 245px !important;
     margin-left: -0.5rem !important;
   }
   .carousel-caption h1 {
@@ -972,13 +972,13 @@
   }
   .btnShopHeader {
     margin-left: -1rem !important;
-    width: 230px !important;
+    width: 220px !important;
     margin-top: 12rem;
   }
   .imgInnerSlider{
     height: 390px !important;
     width: 248px !important;
-    margin-left: -1.5rem !important;
+    margin-left: -1.9rem !important;
   }
 }
 
