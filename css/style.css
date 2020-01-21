@@ -902,7 +902,7 @@
     font-size: 11.5px;
   }
   .btnShopHeader{
-    margin-top: 12rem;
+    margin-top: 13.5rem;
     width: 250px !important;
     margin-left: -0.5rem !important;
   }
@@ -961,10 +961,10 @@
   .btnShopHeader {
     margin-left: 0rem !important;
     width: 190px !important;
-    margin-top: 12rem;
+    margin-top: 9rem;
   }
   .imgInnerSlider{
-    height: 430px !important;
+    height: 400px !important;
     margin-left: -1rem;
   }
 }
