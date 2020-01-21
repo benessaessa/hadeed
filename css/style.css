@@ -881,8 +881,22 @@
     left: 46px;
   }
 }
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px){
+  .imgInnerSlider {
+    margin-left: 1rem !important;
+    height: 430px !important;
+    margin-top: 0.8rem;
+    width: 268px !important;
+  }
+  .carousel-caption h1,.carousel-caption h2{
+    display: none;
+  }
+  .btnShopHeader{
+    margin-top: 13rem !important;
+    width: 240px !important;
+  }
+}
+@media screen and (max-width: 425px) {
   .couchEdit {
     position: relative;
     padding-top: 9rem;
@@ -973,7 +987,7 @@
   .btnShopHeader {
     margin-left: -1rem !important;
     width: 220px !important;
-    margin-top: 12rem;
+    margin-top: 12rem !important;
   }
   .imgInnerSlider{
     height: 390px !important;
