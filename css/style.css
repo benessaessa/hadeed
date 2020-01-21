@@ -614,6 +614,9 @@
   font-family: "BankGothicMedium";
   opacity: 0.5;
 }
+.text-rightT{
+  text-align: right;
+}
 /* ============================================= Congrats =================== */
 .congrats{
   padding-top: 7.5rem;
@@ -886,6 +889,15 @@
   }
   .dangerrr{
     left: 46px;
+  }
+  .text-rightT{
+    text-align: left;
+  }
+  .border-left{
+    border-left: none !important;
+  }
+  .border-right{
+    border-right: none !important;
   }
 }
 @media screen and (max-width: 500px){
