@@ -77,6 +77,8 @@
 }
 .navbar-brand img:hover {
   opacity: 1;
+  transform: rotate(360deg);
+  transition: all 0.5s ease-in-out;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   color: #ffffff;
@@ -550,6 +552,9 @@
   box-shadow: none;
   border: 1px solid #71b6ef;
 }
+.formDisplay{
+  display: none;
+}
 .btnContinue{
   height: 48px;
   background-color: #000000;
@@ -620,6 +625,14 @@
 /* ============================================= Congrats =================== */
 .congrats{
   padding-top: 7.5rem;
+}
+/* ============================================== Cart ========================= */
+.minus-btn,.plus-btn{
+  height: 40px;
+}
+.quantity .form-control{
+  display: inline-flex;
+  margin-top: 2px;
 }
 /* ============================================ Media Query ================= */
 

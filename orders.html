@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="icon" type="image/ico" href="images/footer.png">
     <link rel="stylesheet" href="package/css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Orders</title>
 </head>
@@ -17,7 +18,7 @@
     <div class="container">
         <header>
             <nav class="navbar chekOutNav py-3 navbar-expand-lg navbar-light header bg-white mb-5 sticky-top">
-                <a class="navbar-brand brand2" href="#"><img src="images/Artboardcopy5.png"></a>
+                <a class="navbar-brand brand2" href="#"><img class="wow flipInY" src="images/Artboardcopy5.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -245,6 +246,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
     <script>
         $(window).on("scroll", function() {
         if($(window).scrollTop() > 20) {

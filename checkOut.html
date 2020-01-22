@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="icon" type="image/ico" href="images/footer.png">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Check Out </title>
 </head>
@@ -18,7 +19,7 @@
     <div class="container">
         <header>
             <nav class="navbar chekOutNav py-3 navbar-expand-lg navbar-light header bg-white mb-5 sticky-top">
-                <a class="navbar-brand brand2" href="#"><img src="images/Artboardcopy5.png"></a>
+                <a class="navbar-brand brand2" href="#"><img class="wow flipInY" src="images/Artboardcopy5.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -170,17 +171,64 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn bg-white text-primary mt-4"> + Add New Address </button>
-                        <div class="row pt-4">
-                            <div class="col-sm-6 col-12 pt-3">
-                                <a href="#" class="back"><i class="fa fa-long-arrow-alt-left pr-2 mt-1"></i> Return to
-                                    Shop</a>
+                        <button class="btn bg-white text-primary mt-4 btnAddress"> + Add New Address </button>
+                        <form action="#" class="formCheckOut formDisplay">
+                            <div class="row pt-4 pb-3">
+                                <div class="col">
+                                    <label for="First">First Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col">
+                                    <label for="First">Last Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
-                            <div class="col-sm-6 col-12 pt-2">
-                                <button class="btn btnContinue btn-block text-left">CONTINUE <i
-                                        class="fa fa-long-arrow-alt-right d-flex float-right pt-1"></i></button>
+                            <div class="form-group">
+                                <label>ADDRESS</label>
+                                <input type="text" class="form-control">
                             </div>
-                        </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label>Country</label>
+                                    <select class="form-control">
+                                        <option disabled selected>Selct Your Country</option>
+                                        <option> Egypt </option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label for="First">City</label>
+                                    <select class="form-control">
+                                        <option disabled selected>Selct Your City</option>
+                                        <option> Cairo </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col">
+                                    <label for="First">POSTAL CODE</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text bg-white" id="basic-addon2">FIND</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <label for="First">Phone number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row pt-3">
+                                <div class="col-sm-6 col-12 pt-3">
+                                    <a href="#" class="back"><i class="fa fa-long-arrow-alt-left pr-2 mt-1"></i> Return
+                                        to Shop</a>
+                                </div>
+                                <div class="col-sm-6 pt-3 col-12">
+                                    <button class="btn btnContinue btn-block text-left">CONTINUE <i
+                                            class="fa fa-long-arrow-alt-right d-flex float-right pt-1"></i></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div id="paymentSelection" class="container tab-pane fade"><br>
                         <div class="pl-4 pr-2 py-3" style="border: solid 1px #dde3e8">
@@ -356,6 +404,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
     <script>
         $(window).on("scroll", function() {
         if($(window).scrollTop() > 20) {
@@ -363,6 +413,11 @@
             } else {
                 $('.navbar').css("box-shadow","none");
             }
+        });
+        $(document).ready(function(){
+            $('.btnAddress').click(function(){
+                $('.formDisplay').show(300);
+            });
         });
     </script>
 </body>
