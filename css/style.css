@@ -432,15 +432,19 @@
   margin-right: 1rem;
   height: 34px;
   cursor: pointer;
-  width: 34px;
+  width: 42px;
+}
+.list-group-horizontal .list-group-item:first-child,.list-group-horizontal .list-group-item:last-child{
+  border-radius: 0px;
 }
 .bg-selected{
   border: 2px solid #151212 !important;
   border-radius: 5px;
 }
 .bg-selectedC{
-  border: 2px solid #151212 !important;
+  border: 1px solid #151212 !important;
   border-radius: 0;
+  outline-style: solid;
   padding: 0px !important;
 }
 .swiper-pagination-bullet {
