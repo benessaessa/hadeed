@@ -41,6 +41,19 @@
     url("../fonts/Square.ttf") format("ttf"),
     url("../fonts/Square.ttf") format("truetype");
 }
+/* ============================================== logIn ========================== */
+.btnFace{
+  background-color: #133f72;
+  font-family: "BankGothicMedium";
+  color: white;
+  font-size: 21px;
+  text-align: left;
+}
+.btnFace:hover{
+  background-color: white;
+  color: #000000;
+  border: 1.5px solid #133f72;
+}
 /* ===================================================================================== */
 .dangerrr{
   position: absolute;
@@ -901,6 +914,9 @@
     width: 60% !important;
     margin-left: 5rem;
     height: 500px !important;
+  }
+  .btnFace{
+    font-size: 15px;
   }
   .carousel-caption h1{
     margin-left: -6rem;
