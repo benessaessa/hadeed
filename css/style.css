@@ -90,8 +90,6 @@
 }
 .navbar-brand img:hover {
   opacity: 1;
-  transform: rotate(360deg);
-  transition: all 0.5s ease-in-out;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   color: #ffffff;
@@ -114,7 +112,7 @@
   opacity: 1 !important;
 }
 .navbar-light .navbar-toggler {
-  border-color: black;
+  border:none;
   height: 40px;
 }
 .navbar-light .navbar-toggler-icon {
@@ -206,7 +204,7 @@
   bottom: 14px;
   text-align: center;
   left: 10%;
-  top: 350px;
+  top: 330px;
 }
 .bottom-right h3 ,.bottom-right2 h3 {
   font-size: 25px;
@@ -573,7 +571,7 @@
   display: none;
 }
 .btnContinue{
-  height: 48px;
+  height: 42px;
   background-color: #000000;
   font-family: "BankGothicMedium";
   color: #ffffff;
@@ -651,6 +649,8 @@
 .quantity .form-control{
   display: inline-flex;
   margin-top: 2px;
+  height: 41px;
+  text-align: center;
 }
 /* ============================================ Media Query ================= */
 
@@ -693,6 +693,9 @@
     height: 100%;
     width: 100%;
   }
+  .bottom-right2{
+  top: 240px;
+  }
 }
 
 @media screen and (max-width:1145px){
@@ -716,6 +719,7 @@
   }
   .boxShirt {
     padding-left: 1rem;
+    padding-bottom: 0;
   }
   .couchEdit {
     position: relative;
@@ -737,7 +741,7 @@
     position: relative;
     width: 100%;
     top: 0;
-    right:-12px;
+    right:-12px !important;
   }
   .btnShop {
     margin-bottom: 2rem;
@@ -815,9 +819,9 @@
     letter-spacing: 1px;
     font-size: 14px;
   }
-  .img-fluid{
+  /* .img-fluid{
     height: 800px !important;
-  }
+  } */
   .header.active{
     padding:0.5rem 1rem !important;
   }
@@ -934,6 +938,7 @@
     border-right: none !important;
   }
 }
+
 @media screen and (max-width: 500px){
   .imgInnerSlider {
     margin-left: 1rem !important;
@@ -945,10 +950,14 @@
     display: none;
   }
   .btnShopHeader{
-    margin-top: 13rem !important;
+    /* margin-top: 13rem !important; */
     width: 240px !important;
   }
+  .bottom-right2{
+    top: 100px !important;
+  }
 }
+
 @media screen and (max-width: 425px) {
   .couchEdit {
     position: relative;
@@ -976,26 +985,26 @@
     font-size: 11.5px;
   }
   .btnShopHeader{
-    margin-top: 14.5rem;
+    margin-top: 0rem !important;
     width: 245px !important;
     margin-left: -0.5rem !important;
   }
   .carousel-caption h1 {
-    /* padding-top: 5rem !important;
+    padding-top: 5rem !important;
     font-size: 46px;
     font-family: "BankGothicMedium";
     margin-left: -40px !important;
-    letter-spacing: 0.6rem; */
-    display: none;
+    letter-spacing: 0.6rem;
+    display: block;
   }
   .carousel-caption h2 {
-    /* font-family: "BankGothicMedium";
+    font-family: "BankGothicMedium";
     margin-left: -96px !important;
     margin-right: -100px !important;
     font-size: 30px;
     opacity: 0.7;
-    letter-spacing: 0.5rem; */
-    display: none;
+    letter-spacing: 0.5rem;
+    display: block;
   }
   .btnSign {
     display: block !important;
@@ -1006,11 +1015,17 @@
     width: 100% !important;
     border-radius: 5px 5px 5px 5px !important;
   }
+  .minus-btn,.plus-btn{
+    margin-top: -5px;
+  }
 }
 
 @media screen and (max-width:426px){
   .imgInnerSlider{
     margin-left: -1rem !important;
+  }
+  .btnProceed{
+    font-size: 14px;
   }
 }
 
@@ -1026,26 +1041,32 @@
     font-size: 17px;
 }
   .carousel-caption h1 {
-    /* padding-top: 4rem !important;
+    padding-top: 4rem !important;
     font-size: 41px;
     margin-left: -45px !important;
-    letter-spacing: 0.6rem; */
-    display: none;
+    letter-spacing: 0.6rem;
+    display: block;
   }
   .carousel-caption h2{
-    /* margin-right: -130px !important;
-    margin-left: -120px !important; */
-    display: none;
+    margin-right: -130px !important;
+    margin-left: -120px !important;
+    display: block;
   }
   .btnShopHeader {
     margin-left: -1rem !important;
     width: 220px !important;
-    margin-top: 12rem !important;
+    margin-top: 0rem !important;
   }
   .imgInnerSlider{
     height: 390px !important;
     width: 248px !important;
     margin-left: -1.9rem !important;
+  }
+  .bottom-right2{
+    top: 50px !important;
+  }
+  .botR{
+    bottom: 0px !important;
   }
 }
 
