@@ -652,6 +652,9 @@
   height: 41px;
   text-align: center;
 }
+.btnClear:hover{
+  opacity: 0.9;
+}
 /* ============================================ Media Query ================= */
 
 @media screen and (min-width: 800px) {
@@ -842,6 +845,9 @@
   }
   .brand3{
     padding-left: 3.5rem;
+  }
+  .dangrEdit{
+    margin-left: 65px;
   }
 }
 
