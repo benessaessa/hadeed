@@ -605,6 +605,18 @@
   border-color: #000000;
 }
 
+.btnContinue2{
+  background-color: #e02020;
+  color: white;
+  font-family: "BankGothicMedium";
+}
+
+.btnContinue2:hover{
+  color: #e02020;
+  background-color: #ffffff;
+  border-color: #000000;
+}
+
 .back{
   color: #788995;
   font-size: 16px;

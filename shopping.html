@@ -52,7 +52,7 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav><br>
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-5 wow fadeIn">
@@ -80,19 +80,21 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <h3 class="bankGothFont">MEN’S GYM TRAINING SHORTS</h3>
-                            <p class="bankGothFont text-danger pt-3"><img src="images/ambulance.svg"> FREE NEXT DAY DELIVERY  </p>
+                            <p class="bankGothFont text-danger pt-3"><img src="images/ambulance.svg"> 
+                                <small> NEXT DAY DELIVERY  </small>
+                            </p>
                         </div>
                         <div class="col-lg-4">
                             <h1 class="text-danger font-weight-bolder" style="font-family: square;">399 EGP</h1>
                             <h5 class="bankGothFontOpacity">WAS <del> 769 EGP </del></h5>
 
                         </div>
-                    </div><hr>
-                    <h5 class="bankGothFont">SELECT SIZE</h5>
+                    </div><hr class="mt-1">
+                    <h6 class="bankGothFont">SELECT SIZE</h6>
                     <div class="row">
                         <div class="col-lg-9">
                             <input name="size" id="size" type="hidden">
-                            <ul class="list-group pt-2 selecSize list-group-horizontal border-0">
+                            <ul class="list-group selecSize pt-1 list-group-horizontal border-0">
                                 <li id="select1" class="list-group-item bankGothFont">XS</li>
                                 <li id="select2" class="list-group-item bankGothFont"> S </li>
                                 <li id="select3" class="list-group-item bankGothFont"> M </li>
@@ -101,15 +103,15 @@
                             </ul>
                         </div>
                         <div class="col-lg-3">
-                            <h5 class="bankGothFont pt-4">size chart</h5>
+                            <h5 class="bankGothFont pt-2">size chart</h5>
                         </div>
                     </div>
                     <hr>
-                    <h5 class="bankGothFont">SELECT COLOR</h5>
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-8 pb-1">
+                            <h6 class="bankGothFont">SELECT COLOR</h6>
                             <input name="color" id="color" type="hidden">
-                            <ul class="list-group selectColor pt-2 list-group-horizontal border-0">
+                            <ul class="list-group selectColor pt-3 list-group-horizontal border-0">
                                 <li id="selectColor1" class="list-group-item" style="background-color:#d0021b"></li>
                                 <li id="selectColor2" class="list-group-item" style="background-color: #50e3c2;"></li>
                                 <li id="selectColor3" class="list-group-item" style="background-color:black"></li>
@@ -117,15 +119,30 @@
                                 <li id="selectColor5" class="list-group-item" style="background-color: #f5a623;"></li>
                             </ul>
                         </div>
+                        
                     </div><hr>
-                    <h5 class="bankGothFont">PRODUCT DETAILS</h5>
-                    <p class="bankGothFontOpacity">Want to grow your email list? Well, the first step is to add an email to your website. Step two the businesses like yours.</p>
-                    <p class="bankGothFontOpacity">Step number two will be to connect it to your email marketing software.</p>
+                    
                     <div class="row">
-                        <div class="col-lg-5">
-                            <a href="checkOut.html" class="btn pt-2 btnContinue btn-block text-left">BUY NOW <i class="fa fa-long-arrow-alt-right d-flex float-right pt-1"></i></a>
+                        <div class="col-lg-6 col-md-7 col-sm-6 col-12">
+                            <h6 class="bankGothFont">QUANTITY</h6>
+                            
+                            <div class="quantity pt-2">
+                                <button class="btn btnContinue minus-btn px-3" type="button"
+                                    name="button">-</button>
+                                <input type="text" class="form-control pt-0 mt-0" name="name" value="1"
+                                    style="width: 55px;height:40px">
+                                <button class="btn plus-btn btnContinue" type="button" name="button">+</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5 col-sm-6 col-12 pt-4">
+                            <a href="checkOut.html" class="btn pt-2 pb-2 mt-2 btnContinue2 btn-block text-left">BUY NOW <i class="fa fa-long-arrow-alt-right d-flex float-right pt-1"></i></a>
                         </div>
                     </div>
+                    <hr>
+                    <h6 class="bankGothFont">PRODUCT DETAILS</h6>
+                    <p class="bankGothFontOpacity">Want to grow your email list? Well, the first step is to add an email to your website. Step two the businesses like yours.</p>
+                    <p class="bankGothFontOpacity">Step number two will be to connect it to your email marketing software.</p>
+                    
                 </div>
             </div>
         </div>
@@ -424,6 +441,42 @@
         $("#selectColor4").click(activateLink2);
         $("#selectColor5").click(activateLink2);
 
+    </script>
+    <script type="text/javascript">
+        $('.minus-btn').on('click', function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value > 1) {
+                value = value - 1;
+            } else {
+                value = 0;
+            }
+
+            $input.val(value);
+
+        });
+
+        $('.plus-btn').on('click', function (e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value < 100) {
+                value = value + 1;
+            } else {
+                value = 100;
+            }
+
+            $input.val(value);
+        });
+
+        $('.like-btn').on('click', function () {
+            $(this).toggleClass('is-active');
+        });
     </script>
 </body>
 
