@@ -94,16 +94,16 @@
 .navbar .navbar-nav .nav-item .nav-link {
   color: #ffffff;
   font-family: "futura-medium";
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 4.33px;
   /* opacity: 0.7; */
-  padding-left: 2.5rem;
+  padding-left: 1.5rem;
   font-weight: bold;
   color: #ffffff;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-  opacity: 0.9;
+  opacity: 0.82;
 }
 
 .navbar-nav .nav-item .nav-link img{
@@ -239,7 +239,7 @@
 }
 .nav-pills2 .nav-item .nav-link {
   font-family: "BankGothicMedium";
-  color: #d4d9dd;
+  color: #6d6363;
   padding: 1.5rem;
   opacity: 0.6;
   font-size: 16px;
@@ -702,6 +702,16 @@
   background-color: #a7a8a8;
   color: #000000;
 }
+/* ============================================= Delivery ===================== */
+
+.delivery{
+  padding-top: 7rem;
+}
+.badgeDark{
+  background-color: #000000;
+  color: white;
+}
+
 /* ============================================ Media Query ================= */
 
 @media screen and (min-width: 800px) {
@@ -897,7 +907,7 @@
     padding-left: 3.5rem;
   }
   .dangrEdit{
-    margin-left: 65px;
+    margin-left: 58px;
   }
   .btnFill{
     display: none;
@@ -911,6 +921,8 @@
   }
   .navbar .navbar-nav .nav-item .nav-link{
     padding-left: 1.5rem !important;
+    letter-spacing: 0.33px !important;
+    font-size: 12px;
   }
   .carousel-caption h1{
     padding-top: 3rem;
