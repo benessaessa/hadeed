@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="package/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
     <title>Single Category</title>
 </head>
 
@@ -201,6 +202,11 @@
                             <input type="checkbox" class="custom-control-input" id="Ain">
                             <label class="custom-control-label" for="Ain">In stock</label>
                         </div>
+                        <p class="pt-4 txtMons font-weight-bold">
+                            <label for="amount font-weight-bolder">Price per Unit</label>
+                            <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                        </p>
+                        <div id="slider-range"></div>
                     </div>
                     <button class="btn shopButton btnFill px-4" data-toggle="modal" data-target="#myModal">Filter Products</button>
                     <div class="modal" id="myModal">
@@ -639,10 +645,11 @@
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="package/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/wow.min.js"></script>
     <script> new WOW().init(); </script>
     <script>
@@ -692,6 +699,26 @@
             $('.navbar').css("box-shadow","none");
             }
         });
+    </script>
+     <script>
+        $( "#slider" ).slider({
+            range: true,
+            values: [ 17, 67 ]
+        });
+                $( function() {
+            $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            }
+            });
+            $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+        
     </script>
 
 </body>

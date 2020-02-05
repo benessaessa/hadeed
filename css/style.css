@@ -128,11 +128,11 @@
   margin: auto;
   display: block;
 }
-.carousel-control-prev,
+/* .carousel-control-prev,
   .carousel-control-next{
     top: 360px !important;
     bottom: unset;
-  } 
+  }  */
 .carousel-caption {
   bottom: 32%;
   top: 30%;
@@ -151,6 +151,12 @@
   margin-right: -100px;
   opacity: 0.7;
   letter-spacing: 0.5rem;
+}
+.carousel-indicators{
+  bottom: 35px;
+}
+.carousel-indicators .active{
+  background-color: red;
 }
 .imgInnerSlider {
   position: absolute;
@@ -335,7 +341,7 @@
 .shopNow {
   padding: 1rem 1rem;
   text-align: center;
-  background-color: #cacbd0;
+  background-color: white;
   border: solid 1px #000000;
   font-size: 11px;
   opacity: 0.8;
@@ -358,7 +364,7 @@
 }
 .couchEdit {
   position: absolute;
-  left: 0;
+  left: 50px;
   margin-top: -130px;
   margin-bottom: -20px;
 }
@@ -526,10 +532,27 @@
   }
 }
 /* =========================================== Categories ===================== */
-.ctegoryHead{
-  background: url(../images/bgCategories.jpg);
-  background-size: cover;
-  margin-top: 94px;
+.catgs{
+  margin-top: 2rem;
+}
+.btnDismiss{
+  color: #000000;
+  background-color: #ffffff;
+  border-color: #000000;
+  font-weight: 500;
+  font-size: 22px;
+}
+.btnDismiss:hover{
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #ffffff;
+}
+.alert-warning{
+  background-color: #000000 !important;
+}
+.txtDis{
+  color: #ffffff;
+  font-size: 19px;
 }
 .ctegoryHead2{
   background: url(../images/cat1.jpg);
@@ -556,6 +579,12 @@
   font-weight: 500;
   opacity: 0.7;
   font-family: "BankGothicMedium";
+}
+.imgFull{
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+  object-position: 100% 0px;
 }
 /* ================================= single category ====================== */
 .txtMons{
@@ -859,10 +888,10 @@
   .btnShopHeader{
     margin-left: 1rem !important;
   }
-  .carousel-control-prev,
+  /* .carousel-control-prev,
   .carousel-control-next {
     display: none;
-  }
+  } */
   .navbar-expand-lg {
     padding: 1rem 1.5rem !important;
   }
@@ -938,9 +967,9 @@
 }
 
 @media screen and (min-width:1400px){
-  .carousel-control-prev,.carousel-control-next{
+  /* .carousel-control-prev,.carousel-control-next{
     top: 430px !important;
-  }
+  } */
   .imgInnerSlider{
     width: 63%;
     height:452px;
