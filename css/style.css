@@ -523,7 +523,7 @@
   background-image: url(../images/comingSoon.jpg);
   background-size: cover;
 }
-@media screen and (min-width:700px){
+@media screen and (min-width:1000px){
   .comming{
     height: 100%;
     background-position: center;
@@ -909,7 +909,7 @@
   }
   .nvLnkComming {
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 13px;
   }
   /* .img-fluid{
     height: 800px !important;
