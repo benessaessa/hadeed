@@ -341,7 +341,7 @@
 .shopNow {
   padding: 1rem 1rem;
   text-align: center;
-  background-color: white;
+  /* background-color: white; */
   border: solid 1px #000000;
   font-size: 11px;
   opacity: 0.8;
