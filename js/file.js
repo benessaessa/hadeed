@@ -22,7 +22,7 @@ var swiper = new Swiper('.swiper-container', {
         },
         // when window width is <= 999px
         999: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetweenSlides: 15
         }
     }
