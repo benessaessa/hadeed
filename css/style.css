@@ -187,6 +187,7 @@
   transition-timing-function: ease;
   transition: all 0.2s;
   height: 170px;
+  overflow: hidden;
 }
 .newArrival:hover {
   opacity: 0.9;
@@ -316,7 +317,7 @@
   border-radius: 50%;
   top: 12px;
   color: white;
-  padding: 1.6rem 1.2rem;
+  padding: 1rem 0.7rem;
   font-size: 15px;
   right: 3px;
 }
