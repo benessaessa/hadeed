@@ -1052,9 +1052,6 @@
     margin-top: 0.8rem;
     width: 268px !important;
   }
-  .carousel-caption h1,.carousel-caption h2{
-    display: none;
-  }
   .btnShopHeader{
     /* margin-top: 13rem !important; */
     width: 240px !important;
@@ -1123,10 +1120,6 @@
   }
   .minus-btn,.plus-btn{
     margin-top: -5px;
-  }
-  .newArrival img{
-    height: 80%;
-    width: 70%;
   }
 }
 
