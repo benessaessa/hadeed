@@ -186,7 +186,8 @@
 .newArrival {
   transition-timing-function: ease;
   transition: all 0.2s;
-  height: 170px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
 }
 .newArrival:hover {
