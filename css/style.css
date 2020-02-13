@@ -747,7 +747,10 @@
   background-color: #000000;
   color: white;
 }
-
+.divQuality{
+  margin-top: 6rem;
+  padding-left: 4rem;
+}
 /* ============================================ Media Query ================= */
 
 @media screen and (min-width: 800px) {
@@ -1006,6 +1009,9 @@
   .imgShirt{
     width: 585px;
     height: 462px;
+  }
+  .divQuality{
+    margin-top: 11rem;
   }
 }
 
