@@ -186,7 +186,8 @@
 .newArrival {
   transition-timing-function: ease;
   transition: all 0.2s;
-  height: 170px;
+  height: 210px;
+  width: 210px;
   overflow: hidden;
 }
 .newArrival:hover {
@@ -746,7 +747,10 @@
   background-color: #000000;
   color: white;
 }
-
+.divQuality{
+  margin-top: 6rem;
+  padding-left: 4rem;
+}
 /* ============================================ Media Query ================= */
 
 @media screen and (min-width: 800px) {
@@ -1006,6 +1010,9 @@
     width: 585px;
     height: 462px;
   }
+  .divQuality{
+    margin-top: 11rem;
+  }
 }
 
 @media screen and (max-width:767px){
@@ -1051,9 +1058,6 @@
     height: 430px !important;
     margin-top: 0.8rem;
     width: 268px !important;
-  }
-  .carousel-caption h1,.carousel-caption h2{
-    display: none;
   }
   .btnShopHeader{
     /* margin-top: 13rem !important; */
@@ -1123,10 +1127,6 @@
   }
   .minus-btn,.plus-btn{
     margin-top: -5px;
-  }
-  .newArrival img{
-    height: 80%;
-    width: 70%;
   }
 }
 
