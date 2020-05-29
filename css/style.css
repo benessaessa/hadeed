@@ -186,7 +186,7 @@
 .newArrival {
   transition-timing-function: ease;
   transition: all 0.2s;
-  height: 210px;
+  height: 280px;
   width: 210px;
   overflow: hidden;
 }
@@ -197,6 +197,11 @@
 
 .newArrival a:hover{
   text-decoration: none;
+}
+.newArrival img{
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
 }
 /* ======================================================================== */
 .cards img:hover, .cards2 img:hover,.cardsSingle img:hover{
